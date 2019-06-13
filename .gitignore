@@ -1,6 +1,7 @@
 .idea
 *.pyc
-*/migrations/
+*/migrations/*
+!*/migrations/__init__.py
 media/*
 *.log
 db.sqlite3
