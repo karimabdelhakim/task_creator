@@ -1,0 +1,24 @@
+{%extends 'base.html' %}
+
+{% block body %}
+<div class="row">
+    <h1>Create Task</h1>
+   
+</div>
+
+
+<form action="." method="post">
+    {% include 'form.html' with form=form%}
+    <div class="form-group col-4 offset-4">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+
+</form>
+
+<div>
+    {% if msg %}
+        <h4 class="alert alert-success col-4 offset-4">{{msg}}</h4>
+    {%endif%}
+</div>
+
+{%endblock%}

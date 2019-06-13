@@ -1,0 +1,15 @@
+{% load custom_tags %}
+
+
+{% csrf_token %}
+<div class="col-4 offset-4">
+{{ form.non_field_errors }}
+</div>
+
+{% for field in form %}
+<div class="form-group col-4 offset-4">
+    {{ field.label_tag }} {{ field |add_class:"form-control"}}
+    {{ field.errors }}
+
+</div>
+{% endfor %}
