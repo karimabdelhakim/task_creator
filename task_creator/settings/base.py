@@ -23,7 +23,7 @@ ENV = get_dot_env(BASE_DIR)
 SECRET_KEY = ENV.str("SECRET_KEY")
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['task-creator-django-app.herokuapp.com']
 
 DATABASES = {
     "default": {
