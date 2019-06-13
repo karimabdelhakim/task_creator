@@ -2,7 +2,7 @@ import dj_database_url
 from task_creator.utils import get_dot_env
 
 ENV = get_dot_env()
-DEBUG = False
+DEBUG = True
 
 DATABASES = {"default": dj_database_url.config(conn_max_age=500)}
 
