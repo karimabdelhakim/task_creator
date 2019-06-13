@@ -1,10 +1,11 @@
 # task_creator
 app for creating tasks and sending an emial with its details to the user who created it  
 # install
+create account on https://www.mailjet.com/ and get credentials to send emails  
 create python 3 virtualenv    
 pip install requirements.txt   
 add a .env file and set those environment variables  
-SECRET_KEY  
+SECRET_KEY
 EMAIL_HOST_USER  
 EMAIL_HOST_PASSWORD  
 FROM_EMAIL  
